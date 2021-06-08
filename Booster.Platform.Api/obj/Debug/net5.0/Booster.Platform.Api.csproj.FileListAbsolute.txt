@@ -1,0 +1,12 @@
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\bin\Debug\net5.0\Booster.Platform.Api.deps.json
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\bin\Debug\net5.0\Booster.Platform.Api.dll
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\bin\Debug\net5.0\ref\Booster.Platform.Api.dll
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\bin\Debug\net5.0\Booster.Platform.Api.pdb
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\Booster.Platform.Api.csproj.AssemblyReference.cache
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\Booster.Platform.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\Booster.Platform.Api.AssemblyInfoInputs.cache
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\Booster.Platform.Api.AssemblyInfo.cs
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\Booster.Platform.Api.csproj.CoreCompileInputs.cache
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\Booster.Platform.Api.dll
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\ref\Booster.Platform.Api.dll
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Api\obj\Debug\net5.0\Booster.Platform.Api.pdb

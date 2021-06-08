@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ITextAnalyzerService.cs" />
+    <Compile Remove="TextAnalyzerService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Booster.Platform.Api\Booster.Platform.Api.csproj" />
+    <ProjectReference Include="..\Booster.Platform\Booster.Platform.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Booster.CodingTest.Library">
+      <HintPath>..\Booster.CodingTest.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="NLipsum.Core">
+      <HintPath>..\NLipsum.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

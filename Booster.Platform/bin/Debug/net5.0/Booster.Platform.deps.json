@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Booster.Platform/1.0.0": {
+        "dependencies": {
+          "Booster.Platform.Api": "1.0.0"
+        },
+        "runtime": {
+          "Booster.Platform.dll": {}
+        }
+      },
+      "Booster.Platform.Api/1.0.0": {
+        "runtime": {
+          "Booster.Platform.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Booster.Platform/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Booster.Platform.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="TextAnalyzer\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Booster.Platform.Api\Booster.Platform.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+		  <_Parameter1>Booster</_Parameter1>
+	  </AssemblyAttribute>
+	  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+		  <_Parameter1>Booster.Platform.Tests</_Parameter1>
+	  </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>
