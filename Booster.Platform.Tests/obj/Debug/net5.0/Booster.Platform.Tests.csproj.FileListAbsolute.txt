@@ -102,3 +102,5 @@ C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Tests\
 C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Tests\obj\Debug\net5.0\ref\Booster.Platform.Tests.dll
 C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Tests\obj\Debug\net5.0\Booster.Platform.Tests.pdb
 C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Tests\obj\Debug\net5.0\Booster.Platform.Tests.genruntimeconfig.cache
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Tests\bin\Debug\net5.0\Booster.CodingTest.Library.dll
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster.Platform.Tests\bin\Debug\net5.0\NLipsum.Core.dll

@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Booster.Platform.Api.TextAnalyzer;
 
 namespace Booster.Platform.TextAnalyzer
 {
-    internal class TextAnalyzerService : ITextAnalyzerService
+    public class TextAnalyzerService : ITextAnalyzerService
     {
         // Add validation where necessary
         public int GetTotalNumberOfCharacters(string inputString)
@@ -19,12 +20,12 @@ namespace Booster.Platform.TextAnalyzer
 
         public IEnumerable<string> GetTopFiveLargestWords(string inputString)
         {
-            return inputString.Replace(".", string.Empty).Split(' ').Distinct().OrderByDescending(x => x.Length).Take(5);
+            return inputString.Replace(".", string.Empty).Split(' ').Distinct(StringComparer.CurrentCultureIgnoreCase).OrderByDescending(x => x.Length).Take(5);
         }
 
         public IEnumerable<string> GetTopFiveSmallestWords(string inputString)
         {
-            return inputString.Replace(".", string.Empty).Split(' ').Distinct().OrderBy(x => x.Length).Take(5);
+            return inputString.Replace(".", string.Empty).Split(' ').Where(x => x.Length > 0).Distinct(StringComparer.CurrentCultureIgnoreCase).OrderBy(x => x.Length).Take(5);
         }
 
         public IEnumerable<string> GetTopTenMostFrequentlyAppearingWords(string inputString)
@@ -35,7 +36,7 @@ namespace Booster.Platform.TextAnalyzer
             {
                 if (!wordsWithFrequency.ContainsKey(word))
                 {
-                    var frequency = separatedWordsInInputString.Count(x => x == word);
+                    var frequency = separatedWordsInInputString.Count(x => x.ToLower() == word.ToLower());
                     wordsWithFrequency.Add(word, frequency);
                 }
             }

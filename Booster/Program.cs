@@ -1,26 +1,40 @@
 ﻿using System;
 using System.Linq;
-using Booster.Input;
+using Autofac;
+using Booster.Platform.Api.TextAnalyzer;
+using Booster.Platform.Api.TextGenerator;
+using Booster.Platform.TextGenerator;
 using Booster.Setup;
 
 namespace Booster
 {
     public class Program
     {
+        private const int TextLength = 100;
+        private static ITextAnalyzerService _textAnalyzerService;
+        private static ITextGenerator _textGenerator;
         static void Main(string[] args)
         {
-            Console.WriteLine("Press enter to generate a text with 100 characters or press q to close.");
-            var userChoice = Console.ReadLine();
-            string inputString = String.Empty;
-            while (userChoice != null && userChoice.ToLower() != "q")
+            var container = ContainerConfig.Configure();
+
+            using (var scope = container.BeginLifetimeScope())
             {
-                inputString += WordStreamGenerator.GenerateText(100);
+                _textAnalyzerService = scope.Resolve<ITextAnalyzerService>();
+                _textGenerator = scope.Resolve<ITextGenerator>();
 
-                DisplayOutput(inputString);
+                Console.WriteLine("Press enter to generate a text with 100 characters or press q to close.");
+                var userChoice = Console.ReadLine();
+                string inputString = String.Empty;
+                while (userChoice != null && userChoice.ToLower() != "q")
+                {
+                    inputString += _textGenerator.GenerateText(TextLength);
 
-                Console.WriteLine();
-                Console.WriteLine("Press enter to generate next 100 characters text or press q to close.");
-                userChoice = Console.ReadLine();
+                    DisplayOutput(inputString);
+
+                    Console.WriteLine();
+                    Console.WriteLine("Press enter to generate next 100 characters text or press q to close.");
+                    userChoice = Console.ReadLine();
+                }
             }
         }
 
@@ -28,7 +42,7 @@ namespace Booster
         {
             // Add output logger
 
-            var textAnalyzerService = PlatformInstaller.CreateTextAnalyzer();
+            //var textAnalyzerService = PlatformInstaller.CreateTextAnalyzer();
 
             // Print string 
             Console.WriteLine("Text generated");
@@ -42,19 +56,19 @@ namespace Booster
             Console.WriteLine("Analysis");
             Console.WriteLine("----------------------");
             Console.WriteLine();
-            Console.WriteLine("Total number of characters: " + textAnalyzerService.GetTotalNumberOfCharacters(inputString));
+            Console.WriteLine("Total number of characters: " + _textAnalyzerService.GetTotalNumberOfCharacters(inputString));
             Console.WriteLine();
-            Console.WriteLine("Total number of words: " + textAnalyzerService.GetTotalNumberOfWords(inputString));
+            Console.WriteLine("Total number of words: " + _textAnalyzerService.GetTotalNumberOfWords(inputString));
             Console.WriteLine();
-            Console.WriteLine("Five largest words are: " + string.Join(", ", textAnalyzerService.GetTopFiveLargestWords(inputString).ToArray()));
+            Console.WriteLine("Five largest words are: " + string.Join(", ", _textAnalyzerService.GetTopFiveLargestWords(inputString).ToArray()));
             Console.WriteLine();
-            Console.WriteLine("Five smallest words are: " + string.Join(", ", textAnalyzerService.GetTopFiveSmallestWords(inputString).ToArray()));
+            Console.WriteLine("Five smallest words are: " + string.Join(", ", _textAnalyzerService.GetTopFiveSmallestWords(inputString).ToArray()));
             Console.WriteLine();
-            Console.WriteLine("Ten most frequently appearing words are: " + string.Join(", ", textAnalyzerService.GetTopTenMostFrequentlyAppearingWords(inputString).ToArray()));
+            Console.WriteLine("Ten most frequently appearing words are: " + string.Join(", ", _textAnalyzerService.GetTopTenMostFrequentlyAppearingWords(inputString).ToArray()));
             Console.WriteLine();
             Console.WriteLine("Characters with Frequency");
             var charactersWithFrequency =
-                textAnalyzerService.GetCharactersWithFrequencyInDescendingOrder(inputString);
+                _textAnalyzerService.GetCharactersWithFrequencyInDescendingOrder(inputString);
 
             foreach (var ch in charactersWithFrequency)
             {

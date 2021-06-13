@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xfuZ6u0X+bBqsxNNWXa8peaWrfhBRfbcBX2OlpKSbHKqNAgkKVZtaogPKw2EvAN+zqkXCcrL5/gB06UmhwTUFQ==",
+  "dgSpecHash": "hkNlNHWPwGmsEYY/a3g2+dZSxtfDMs7vrMmfm+icVoSx2ibZnRPxJ2mxfWcgbbC7P8pgZICiOALxBfgb6vkN2A==",
   "success": true,
   "projectFilePath": "C:\\VisualStudioProjects\\RecruitmentTests\\Booster\\Booster\\Booster\\Booster.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ojhau\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
+    "C:\\Users\\ojhau\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
+    "C:\\Users\\ojhau\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\ojhau\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

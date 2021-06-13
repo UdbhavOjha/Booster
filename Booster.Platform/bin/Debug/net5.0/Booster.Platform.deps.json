@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v5.0": {
       "Booster.Platform/1.0.0": {
         "dependencies": {
-          "Booster.Platform.Api": "1.0.0"
+          "Booster.Platform.Api": "1.0.0",
+          "Booster.CodingTest.Library": "1.0.0.0",
+          "NLipsum.Core": "1.1.0.0"
         },
         "runtime": {
           "Booster.Platform.dll": {}
@@ -17,6 +19,22 @@
       "Booster.Platform.Api/1.0.0": {
         "runtime": {
           "Booster.Platform.Api.dll": {}
+        }
+      },
+      "Booster.CodingTest.Library/1.0.0.0": {
+        "runtime": {
+          "Booster.CodingTest.Library.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NLipsum.Core/1.1.0.0": {
+        "runtime": {
+          "NLipsum.Core.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
         }
       }
     }
@@ -29,6 +47,16 @@
     },
     "Booster.Platform.Api/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Booster.CodingTest.Library/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NLipsum.Core/1.1.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

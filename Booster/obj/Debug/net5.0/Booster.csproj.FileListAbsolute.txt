@@ -21,3 +21,6 @@ C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster\bin\Debug\net5.
 C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster\bin\Debug\net5.0\Booster.Platform.dll
 C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster\bin\Debug\net5.0\Booster.Platform.Api.pdb
 C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster\bin\Debug\net5.0\Booster.Platform.pdb
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster\bin\Debug\net5.0\Autofac.dll
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\VisualStudioProjects\RecruitmentTests\Booster\Booster\Booster\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

@@ -11,17 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Booster.Platform.Api\Booster.Platform.Api.csproj" />
-    <ProjectReference Include="..\Booster.Platform\Booster.Platform.csproj" />
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Booster.CodingTest.Library">
-      <HintPath>..\Booster.CodingTest.Library.dll</HintPath>
-    </Reference>
-    <Reference Include="NLipsum.Core">
-      <HintPath>..\NLipsum.Core.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Booster.Platform.Api\Booster.Platform.Api.csproj" />
+    <ProjectReference Include="..\Booster.Platform\Booster.Platform.csproj" />
   </ItemGroup>
 
 </Project>
